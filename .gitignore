@@ -1,2 +1,6 @@
 *.pyc
 *.swp
+.vscode
+dist/
+build/
+*.egg-info/
