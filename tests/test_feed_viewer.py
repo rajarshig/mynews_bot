@@ -1,9 +1,10 @@
-from mynews_bot.rss_feed import main as rss_feed_main
+from src.mynews_bot.rss_feed import main as rss_feed_main
 from mynews_bot.data import main as rss_data_main
 from mynews_bot.rss_feed.utils import feed_viewer
 
 available_rss_feed_sources = rss_data_main._get_available_rss_feed_sources()
         
+# TODO: simulate cmd input & output
 
 def test_all_rss_feed_return_data():
     """
