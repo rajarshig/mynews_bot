@@ -8,9 +8,6 @@ NEWS_SOURCE_RSS_MAPPING = {
     'it':{
         'default': 'https://www.indiatoday.in/rss/home'
     },
-    'gnews':{
-        'default': 'https://news.google.com/rss?hl=en-US&gl=US&ceid=US%3Aen&x=1571747254.2933'
-    },
     'quint':{
         'default': 'https://prod-qt-images.s3.amazonaws.com/production/thequint/feed.xml'
     },
