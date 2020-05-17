@@ -1,6 +1,9 @@
 import argparse
 import time
 import sys
+from datetime import datetime
+
+import pandas as pd
 
 from rss_feed import main as rss_feed_main
 from rss_feed.utils import feed_viewer
@@ -94,6 +97,11 @@ def cmd_runner():
         for feed_data in feed_data_list:
             feed_data_flattened_list.extend(feed_data) 
 
+        feed_data_flattened_df = pd.DataFrame(
+            data=feed_data_flattened_list
+        )
+        current_date = datetime.utcnow().strftime('%Y%m%d')
+        feed_data_flattened_df.to_csv(f"{current_date}.csv", index=False)
         feed_viewer(feed_data_flattened_list)
             
             
