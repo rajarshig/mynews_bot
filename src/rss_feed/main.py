@@ -21,13 +21,11 @@ def _get(rss_feed_details={}):
         fetched_single_data = dict()
         fetched_title = data.get('title')
         item_url = data.get('link')
-        published_parsed = data.get('published_parsed')
         published = data.get('published')
         fetched_single_data['url'] = item_url 
         fetched_single_data['source'] = source_name
         fetched_single_data['title'] = fetched_title
         fetched_single_data['published'] = published
-        fetched_single_data['published_parsed'] = published_parsed
         fetched_all_data.append(fetched_single_data)
     
     return fetched_all_data
