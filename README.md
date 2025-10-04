@@ -37,9 +37,9 @@ Example
 ```
 mynews_bot -s BBC
 ```
-- Get top 5 news for source CNBC
+- Get top 10 news for source CNBC
 ```
-mynews_bot -s CNBC -t 5
+mynews_bot -s CNBC -t 10
 ``` 
 - Get news from all sources
 ```
